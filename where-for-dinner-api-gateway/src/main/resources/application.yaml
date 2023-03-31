@@ -1,11 +1,11 @@
 where-for-dinner:
   namespace: ${spring.cloud.kubernetes.client.namespace}
   ui:
-    uri: http://where-for-dinner-ui.${where-for-dinner.namespace}/
+    uri: http://where-for-dinner-ui-${where-for-dinner.namespace}/
   search:
-    uri: http://where-for-dinner-search.${where-for-dinner.namespace}/
+    uri: http://where-for-dinner-search-${where-for-dinner.namespace}/
   availability:
-    uri: http://where-for-dinner-availability.${where-for-dinner.namespace}/
+    uri: http://where-for-dinner-availability-${where-for-dinner.namespace}/
 
 spring:
   session:
